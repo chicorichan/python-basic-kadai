@@ -11,11 +11,11 @@ class Human:
             print(f"{self.name}は{self.age}歳なので大人ではありません")
 
 #インスタンス化
-human = Human("侍太郎", 36)
-human1 = Human("侍花子", 12)
-human2 = Human("侍一郎", 20)      
+#human = Human("侍太郎", 36)
+#human1 = Human("侍花子", 12)
+#human2 = Human("侍一郎", 20)      
 
-users = {1:human, 2:human1, 3:human2}
+users = [Human("侍太郎", 36), Human("侍花子", 12), Human("侍一郎", 20)]
  
-for human.value in users:
-    human.check_adult()
+for user in users:
+    user.check_adult()
